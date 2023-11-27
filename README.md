@@ -1,15 +1,33 @@
-# document-transmission-system
-Please find files attached generated files attached in the folder server.crt and server.key , it should be in the same folder as Alice.py and Bob.py. 
-Right mouse click and copy path of these files and attach it paste it in the section socket wrap using SSL/TLS.
+# Document Transmission System
+#Overview
+This system facilitates secure communication between two entities, Alice and Bob, using SSL/TLS for encryption. It ensures the integrity and confidentiality of the data transmitted.
 
-Here is example of my program:
+#File Structure
+1. alice.py: Script for Alice's end of the communication.
+2. bob.py: Script for Bob's end of the communication.
+3. server.key: SSL/TLS key file.
+4. server.crt: SSL/TLS certificate file.
+5. Info-Security Report.pdf: Project report and additional documentation.
+6. readme.txt: Basic information about the project.
 
-# Wrap the socket with SSL/TLS
-ssl_socket = ssl.wrap_socket(client_socket, server_side=True, keyfile="C:/Users/ashis/OneDrive/Desktop/Info security/Project-1/server.key", certfile="C:/Users/ashis/OneDrive/Desktop/Info security/Project-1/server.crt", ssl_version=ssl.PROTOCOL_TLS)
+#Setup Instructions
+#SSL/TLS Configuration
+#1. Certificate and Key Files: Ensure that server.crt and server.key are located in the same directory as alice.py and bob.py.
 
-File path of server.key should be added in keyfile.
-File path of server.crt should be added in cerfile.
+#2. Socket Configuration: Wrap the socket with SSL/TLS in both alice.py and bob.py by using the following syntaxin pthon:
 
-Same procedure for alice.py and bob.py
+ssl_socket = ssl.wrap_socket(
+    client_socket,
+    server_side=True,
+    keyfile="<path_to_server.key>",
+    certfile="<path_to_server.crt>",
+    ssl_version=ssl.PROTOCOL_TLS
+)
+Replace <path_to_server.key> and <path_to_server.crt> with the actual file paths of server.key and server.crt.
 
-And lastly execute Alice.py first and then Bob.py next.
+#Running the Scripts
+1. Execute Alice's Script: Run alice.py first. It initializes the connection and waits for Bob's script to connect.
+2. Execute Bob's Script: Run bob.py next to establish the connection with Alice's script.
+#Additional Notes
+1. Ensure Python and necessary SSL libraries are installed.
+2. Check the Info-Security Report.pdf for detailed project information and security details.
