@@ -31,3 +31,6 @@ Replace <path_to_server.key> and <path_to_server.crt> with the actual file paths
 # Additional Notes
 1. Ensure Python and necessary SSL libraries are installed.
 2. Check the Info-Security Report.pdf for detailed project information and security details.
+Here is a screenshot of the program in action
+![ASecurity-Screenshot](image/Screenshot.png)
+
