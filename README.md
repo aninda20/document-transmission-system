@@ -11,10 +11,10 @@ This system facilitates secure communication between two entities, Alice and Bob
 6. readme.txt: Basic information about the project.
 
 # Setup Instructions
-# SSL/TLS Configuration
-# 1. Certificate and Key Files: Ensure that server.crt and server.key are located in the same directory as alice.py and bob.py.
+ SSL/TLS Configuration
+ 1. Certificate and Key Files: Ensure that server.crt and server.key are located in the same directory as alice.py and bob.py.
 
-# 2. Socket Configuration: Wrap the socket with SSL/TLS in both alice.py and bob.py by using the following syntaxin pthon:
+ 2. Socket Configuration: Wrap the socket with SSL/TLS in both alice.py and bob.py by using the following syntaxin pthon:
 
 ssl_socket = ssl.wrap_socket(
     client_socket,
