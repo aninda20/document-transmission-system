@@ -1,6 +1,6 @@
 # Document Transmission System
 # Overview
-This system facilitates secure communication between two entities, Alice and Bob, using SSL/TLS for encryption. It ensures the integrity and confidentiality of the data transmitted.
+This project facilitates secure communication between two entities, Alice and Bob, using SSL/TLS for encryption. It ensures the integrity and confidentiality of the data transmitted.
 
 # File Structure
 1. alice.py: Script for Alice's end of the communication.
